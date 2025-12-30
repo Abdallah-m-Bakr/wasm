@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Dark Mode Configuration */
+@variant dark (&:where(.dark, .dark *));
+
+/* Container Configuration */
+@theme {
+  --container-center: true;
+  --container-padding: 1rem;
+  --container-padding-sm: 1.5rem;
+  --container-padding-lg: 2rem;
+}
+
+/* Custom Theme Variables */
+:root {
+  --color-wood-50: #fdf8f3;
+  --color-wood-100: #f5e6d3;
+  --color-wood-200: #e6c9a8;
+  --color-wood-300: #d4a574;
+  --color-wood-400: #c7894d;
+  --color-wood-500: #b8743a;
+  --color-wood-600: #9d5c2e;
+  --color-wood-700: #7d4626;
+  --color-wood-800: #5f3520;
+  --color-wood-900: #3d2316;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tajawal', 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RTL-specific font handling */
+html[lang="en"] body {
+  font-family: 'Inter', 'Playfair Display', system-ui, -apple-system, sans-serif;
+}
+
+html[lang="ar"] body {
+  font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth Transitions for Theme and Direction Changes */
+body,
+.transition-all {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d97706, #b45309);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #b45309, #92400e);
+}
+
+/* Selection Colors */
+::selection {
+  background-color: #d97706;
+  color: white;
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Image Lazy Loading Placeholder */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"].loaded,
+img[loading="lazy"]:not([src=""]) {
+  opacity: 1;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromStart {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RTL version of slide animation */
+@keyframes slideInFromStartRTL {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideInFromStart 0.5s ease-out forwards;
+}
+
+/* Stagger Children Animation */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Gradient Text Support */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* RTL Support Utilities */
+[dir="rtl"] .rtl\:rotate-180 {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .rtl\:flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Logical Properties Support */
+.start-0 {
+  inset-inline-start: 0;
+}
+
+.end-0 {
+  inset-inline-end: 0;
+}

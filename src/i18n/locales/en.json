@@ -1,0 +1,106 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "We Design Luxury",
+        "subtitle": "Transforming your spaces into masterpieces that reflect your refined taste",
+        "cta": "Explore Our Work",
+        "secondary": "Contact Us"
+    },
+    "about": {
+        "sectionTitle": "About Us",
+        "title": "Creating Exceptional Spaces Since 2010",
+        "description": "We are an interior design studio specializing in creating luxurious spaces that combine modern elegance with ultimate comfort. We believe every space tells a unique story.",
+        "philosophy": "Our philosophy is based on the harmonious blend of premium natural materials and contemporary design, while preserving our clients' cultural identity.",
+        "stats": {
+            "projects": "Projects Completed",
+            "clients": "Happy Clients",
+            "awards": "Design Awards",
+            "years": "Years Experience"
+        }
+    },
+    "services": {
+        "sectionTitle": "Our Services",
+        "title": "Comprehensive Design Solutions",
+        "subtitle": "We offer a complete range of interior design services to meet all your needs",
+        "items": {
+            "interior": {
+                "title": "Interior Design",
+                "description": "Luxurious interior design for villas, apartments, and palaces using the latest global styles"
+            },
+            "consultation": {
+                "title": "Consultation",
+                "description": "Specialized consultation in selecting colors, materials, and appropriate furniture"
+            },
+            "execution": {
+                "title": "Execution & Supervision",
+                "description": "Complete supervision on project execution to ensure the highest quality standards"
+            },
+            "furniture": {
+                "title": "Furniture Design",
+                "description": "Custom furniture design that reflects your personality and refined taste"
+            },
+            "lighting": {
+                "title": "Lighting Design",
+                "description": "Innovative lighting solutions that create the perfect atmosphere for your spaces"
+            },
+            "landscape": {
+                "title": "Landscape Design",
+                "description": "Outdoor spaces and gardens design that complement the beauty of interior design"
+            }
+        }
+    },
+    "gallery": {
+        "sectionTitle": "Our Gallery",
+        "title": "Projects We're Proud Of",
+        "subtitle": "Discover our latest projects that showcase our creativity and excellence",
+        "viewProject": "View Project",
+        "projects": {
+            "luxury_villa": "Luxury Villa - 5th Settlement",
+            "modern_apartment": "Modern Apartment - Nasr City",
+            "royal_palace": "Luxury Palace - New Cairo",
+            "penthouse": "Penthouse - Maadi",
+            "beach_house": "Beach House - North Coast",
+            "office": "Executive Office - Sheikh Zayed"
+        }
+    },
+    "contact": {
+        "sectionTitle": "Contact Us",
+        "title": "Let's Turn Your Vision Into Reality",
+        "subtitle": "We're here to answer your questions and discuss your next project",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Your Message",
+            "submit": "Send Message"
+        },
+        "info": {
+            "address": "Cairo, Egypt - Nasr City",
+            "phone": "+20 10 1234 5678",
+            "email": "info@wasm-design.com",
+            "hours": "Sunday - Thursday: 9 AM - 6 PM"
+        }
+    },
+    "footer": {
+        "description": "Designing exceptional spaces that combine luxury and comfort for over a decade.",
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "followUs": "Follow Us",
+        "rights": "All Rights Reserved",
+        "company": "wasm"
+    },
+    "theme": {
+        "light": "Light Mode",
+        "dark": "Dark Mode"
+    },
+    "language": {
+        "ar": "العربية",
+        "en": "English"
+    }
+}
